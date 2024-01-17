@@ -1,0 +1,30 @@
+.delteNote:hover {
+    border: 1px solid black;
+}
+.btn-close {
+    float: right;
+}
+
+.notes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.note {
+    padding: 20px;
+    font-size: 17px;
+    background-color: #fff;
+    border: 3px solid black;
+}
+
+
+@media (max-width: 768px) {
+    .note {
+        width: 100%;
+    }
+    .notes {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
